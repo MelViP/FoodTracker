@@ -9,12 +9,11 @@ function App() {
   return (
     <>
       <ChakraProvider>
+      <PreLoader />
+      <PrincipalScreen />
         <BrowserRouter>
           <Routes>
-
-            <PreLoader />
-            <PrincipalScreen />
-            <Route element={}/>
+            {/* <Route element={}/> */}
 
           </Routes>
         </BrowserRouter>

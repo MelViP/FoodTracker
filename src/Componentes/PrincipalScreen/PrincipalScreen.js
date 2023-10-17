@@ -2,6 +2,7 @@ import { Button } from '@chakra-ui/react'
 import "./PrincipalScreen.css"
 
 export const PrincipalScreen = () => {
+    
     return (
         <div className='bigContainer'>
             <div className="container">
