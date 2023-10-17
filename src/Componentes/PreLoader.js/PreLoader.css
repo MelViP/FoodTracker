@@ -19,6 +19,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    transition: opacity .75s, visibility .75s;
 }
 
 .legendContainer{
@@ -177,4 +179,9 @@
     to {
         transform: rotate(0deg);
     }
+}
+
+.loader--hidden {
+    opacity: 0;
+    visibility: hidden;
 }

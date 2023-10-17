@@ -1,13 +1,13 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { SyncLoader } from "react-spinners";
-import { preLoaderAnim } from "../../Animations/preLoaderAnim";
 import "./PreLoader.css";
 
 export const PreLoader = () => {
 
-    useEffect(()=>{
-        preLoaderAnim()
-    },[]);
+   
+    window.addEventListener("load", ()=>{
+        document.querySelector(".loaderContainer").classList.add("loader--hidden")
+    })
 
     return (
         <div className="loaderContainer">
