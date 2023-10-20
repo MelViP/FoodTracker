@@ -39,7 +39,7 @@ export const SignUp = () => {
             </Button>
           </InputRightElement>
         </InputGroup>
-        <Button variant={"ghost"}>
+        <Button variant={"link"}>
           <strong>Forgot my password</strong>
         </Button>
       </Stack>
