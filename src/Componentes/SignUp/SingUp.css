@@ -1,6 +1,27 @@
 .signUp-container{
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    margin: auto 1rem;
-    gap: 1rem;
+    justify-content: center;
 }
+.signUp-container > h1 {
+    font-size: x-large;
+    margin-bottom: 1.75rem;
+}
+.inputs-signUp{
+    padding: 1rem 2rem;
+    
+}
+.inputs-signUp > label,
+.inputs-signUp > h3 { 
+    text-align: left;
+    margin-bottom: .1rem
+}
+.inputs-signUp > h3 {
+    cursor: pointer;
+}
+.name-signup{
+    margin-bottom: 2rem;
+}
+.password-signup{}
