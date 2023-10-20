@@ -24,4 +24,7 @@
 .name-signup{
     margin-bottom: 2rem;
 }
-.password-signup{}
+.ButtonGroup-signup {
+    display: flex;
+    justify-content: center;
+}

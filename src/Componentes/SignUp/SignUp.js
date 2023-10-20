@@ -43,7 +43,7 @@ export const SignUp = () => {
           <strong>Forgot my password</strong>
         </Button>
       </Stack>
-      <ButtonGroup>
+      <ButtonGroup className="ButtonGroup-signup">
         <Button variant={"ghost"}>Create an account</Button>
         <Button colorScheme='purple' rightIcon={<AiOutlineArrowRight/>} >Sign In</Button>
       </ButtonGroup>
