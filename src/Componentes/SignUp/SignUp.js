@@ -42,11 +42,14 @@ export const SignUp = () => {
         <Button variant={"link"}>
           <strong>Forgot my password</strong>
         </Button>
+        <Button className="Btn-signup" colorScheme='purple' rightIcon={<AiOutlineArrowRight/>} >Sign In</Button>
       </Stack>
-      <ButtonGroup className="ButtonGroup-signup">
-        <Button variant={"ghost"}>Create an account</Button>
-        <Button colorScheme='purple' rightIcon={<AiOutlineArrowRight/>} >Sign In</Button>
-      </ButtonGroup>
+
+      <section className="createAccount-signup">
+        <p>Don't have an account? </p>
+      <Button variant={"ghost"}>Create an account</Button>
+      </section>
+      
     </div>
   );
 };

@@ -3,11 +3,13 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+
 }
 .signUp-container > h1 {
     font-size: x-large;
-    margin-bottom: 1.75rem;
+    padding: 2.75rem;
 }
 .inputs-signUp{
     padding: 1rem 2rem;
@@ -24,7 +26,11 @@
 .name-signup{
     margin-bottom: 2rem;
 }
-.ButtonGroup-signup {
+.Btn-signup {
+    margin: 2rem 0;
+}
+.createAccount-signup{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
