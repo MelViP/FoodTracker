@@ -5,6 +5,7 @@ import "./App.css";
 import { PreLoader } from "./Componentes/PreLoader.js/PreLoader";
 import { PrincipalScreen } from "./Componentes/PrincipalScreen/PrincipalScreen";
 import { SignUp } from "./Componentes/SignUp/SignUp";
+import { CreateAccount } from "./Componentes/CreateAccout/CreateAccount";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <ChakraProvider>
         <PreLoader />
         {/* <PrincipalScreen /> */}
-        <SignUp />
+        {/* <SignUp /> */}
+        <CreateAccount />
 
         <BrowserRouter>
           <Routes>{/* <Route element={}/> */}</Routes>
