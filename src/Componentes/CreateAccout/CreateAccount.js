@@ -1,26 +1,23 @@
-import { Input } from "@chakra-ui/react";
+import { Button, Input, Select } from "@chakra-ui/react";
+import { PersonalData } from "./screens/PersonalData";
+import { LocationData } from "./screens/LocationData";
+import "./CreateAccount.css"
 
 export const CreateAccount = () => {
   return (
     <>
-      <form>
-        <h1>Create your account</h1>
-        <fieldset>
-          <label>Name
-          <Input variant="outline" placeholder="Name" /> </label>
-        </fieldset>
-      </form>
+    <h1 className="createAccount-title">Create your account</h1>
+      <form className="createAccount-form">
 
-      <legend>Name</legend>
-      <Input variant="outline" placeholder="Lastname" />
-      <legend>Name</legend>
-      <Input variant="outline" placeholder="E-mail" />
-      <Input variant="outline" placeholder="Outline" />
-      <Input
-        placeholder="Select Date and Time"
-        size="md"
-        type="datetime-local"
-      />
+        {/* AQUI VA LO DE ANDY PARA CAMBIAR DE PANTALLA */}
+
+        <PersonalData />
+
+        <LocationData />
+
+        <Button />
+        
+      </form>
     </>
   );
 };
