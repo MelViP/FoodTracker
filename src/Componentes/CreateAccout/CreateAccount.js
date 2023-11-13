@@ -1,4 +1,5 @@
-import { Button, Input, Select } from "@chakra-ui/react";
+import Button from '@mui/material/Button';
+import SendIcon from '@mui/icons-material/Send';
 import { PersonalData } from "./screens/PersonalData";
 import { LocationData } from "./screens/LocationData";
 import "./CreateAccount.css"
@@ -15,7 +16,7 @@ export const CreateAccount = () => {
 
         <LocationData />
 
-        <Button />
+        <Button variant="contained" color="secondary" endIcon={<SendIcon />}>Create Account</Button>
         
       </form>
     </>

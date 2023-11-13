@@ -1,13 +1,9 @@
 import { useState } from "react";
 import "./SingUp.css";
 import {
-  Input,
-  InputGroup,
-  InputRightElement,
+  TextField,
   Button,
-  Stack,
-  ButtonGroup,
-} from "@chakra-ui/react";
+} from "@mui/material";
 import { AiOutlineArrowRight } from 'react-icons/ai';
 
 export const SignUp = () => {
@@ -18,32 +14,30 @@ export const SignUp = () => {
     <div className="signUp-container">
       <h1>Access Food Tracker</h1>
 
-      <Stack className="inputs-signUp">
+     
         <label for="input-name">Name</label>
-        <Input
+        <TextField
           variant="outline"
           placeholder="John Doe"
           className="name-signup"
         />
 
         <label for="input-name">Password</label>
-        <InputGroup className="password-signup">
-          <Input
+       
+          <TextField
             pr="4.5rem"
             type={show ? "text" : "password"}
             placeholder="Enter password"
           />
-          <InputRightElement width="4.5rem">
+          
             <Button h="1.75rem" size="sm" onClick={handleShow}>
               {show ? "Hide" : "Show"}
             </Button>
-          </InputRightElement>
-        </InputGroup>
         <Button variant={"link"}>
           <strong>Forgot my password</strong>
         </Button>
         <Button className="Btn-signup" colorScheme='purple' rightIcon={<AiOutlineArrowRight/>} >Sign In</Button>
-      </Stack>
+      
 
       <section className="createAccount-signup">
         <p>Don't have an account? </p>

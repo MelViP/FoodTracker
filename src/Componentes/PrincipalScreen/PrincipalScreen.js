@@ -1,4 +1,4 @@
-import { Button } from '@chakra-ui/react'
+import { Button } from "@mui/material"
 import "./PrincipalScreen.css"
 
 export const PrincipalScreen = () => {
@@ -17,7 +17,7 @@ export const PrincipalScreen = () => {
 
                     }}
                     type='submit'
-                > Button </Button>
+                > Start </Button>
             </div>
         </div>
     )

@@ -1,28 +1,26 @@
-import { Select } from "@chakra-ui/react";
+import { Select } from "@mui/material";
+import React, { useEffect, useState } from "react";
+import countrySelect from "country-select-js";
 
 export const LocationData = () => {
+  const [country, setCountry] = useState("Colombia");
+
+  useEffect(() => {
+    if (countrySelect.init) {
+      countrySelect.init();
+    }
+  }, []);
+
   return (
-    <>
-      <fieldset>
-        <legend>Country</legend>
-        <Select placeholder="Select option">
-          <option value={"Colombia"}>Colombia</option>
-          <option value={"México"}>México</option>
-          <option value={"Ecuador"}>Ecuador</option>
-          <option value={"Costa Rica"}>Costa Rica</option>
-          <option value={"Brazil"}>Brazil</option>
-          <option value={"Bolivia"}>Bolivia</option>
-          <option value={"El Salvador"}>El Salvador</option>
-          <option value={"Chile"}>Chile</option>
-          <option value={"Perú"}>Perú</option>
-          <option value={"Argentina"}>Argentina</option>
-          <option value={"Venezuela"}>Venezuela</option>
-          <option value={"Chile"}>Chile</option>
-          <option value={"Uruguay"}>Uruguay</option>
-          <option value={"Belice"}>Belice</option>
-          <option value={"Paraguay"}>Paraguay</option>
-        </Select>
-      </fieldset>
-    </>
+    <fieldset>
+      <Select
+        labelId="Seleccione su país"
+        id="Seleccione su país"
+        label="País"
+        onChange={(event) => setCountry(event.target.value)}
+      >
+        <countrySelect country={country} onCountryChange={setCountry} />
+      </Select>
+    </fieldset>
   );
 };
