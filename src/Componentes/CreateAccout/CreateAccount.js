@@ -16,7 +16,7 @@ export const CreateAccount = () => {
 
         <LocationData />
 
-        <Button variant="contained" color="secondary" endIcon={<SendIcon />}>Create Account</Button>
+        <Button variant="contained" color="secondary" >Create Account</Button>
         
       </form>
     </>

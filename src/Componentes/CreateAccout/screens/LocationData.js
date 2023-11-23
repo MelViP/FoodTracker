@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import countrySelect from "country-select-js";
 
 export const LocationData = () => {
-  const [country, setCountry] = useState("Colombia");
+  const [country, setCountry] = useState();
 
   useEffect(() => {
     if (countrySelect.init) {

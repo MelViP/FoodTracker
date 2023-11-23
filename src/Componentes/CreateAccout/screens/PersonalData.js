@@ -1,20 +1,23 @@
-import { FormControl, FormLabel, Select, TextField } from "@mui/material";
+import { FormControl, Select, FormLabel, TextField } from "@mui/material";
 
 export const PersonalData = () => {
   return (
     <>
       <FormControl>
-        <FormLabel shrink>Name</FormLabel>
-        <TextField variant="outline" placeholder="Name" color="secondary" />
+        <FormLabel shrink="true" >Name</FormLabel>
+        <TextField variant="outlined" placeholder="Name" color="secondary" />
       </FormControl>
+      
       <FormControl>
-        <FormLabel shrink>Lastname</FormLabel>
-        <TextField variant="outline" placeholder="Lastname" />
+        <FormLabel shrink="true" >Lastname</FormLabel>
+        <TextField variant="outlined" placeholder="Lastname" />
       </FormControl>
+
       <FormControl>
-        <FormLabel shrink>E-mail</FormLabel>
-        <TextField variant="outline" placeholder="E-mail" />
+        <FormLabel shrink="true" >E-mail</FormLabel>
+        <TextField variant="outlined" placeholder="E-mail" />
       </FormControl>
+
       <FormControl>
         <FormLabel shrink>Birth date</FormLabel>
         <Select
